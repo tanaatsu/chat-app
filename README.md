@@ -2,11 +2,11 @@
 
 ## users テーブル
 
-| colum            | Type     |Options       |
-| ---------------- | -------- | ------------ |
-|name              | string   | null: false  |
-|email             | string   | null: false  |
-|encrypted_password| string   | null: false  |
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| name               | string | null: false |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
 
 ### Association
 
@@ -14,7 +14,7 @@
 - has_many :rooms, through: :room_users
 - has_many :messages
 
-## rooms　テーブル
+## rooms テーブル
 
 | Column | Type   | Options     |
 | ------ | ------ | ----------- |
@@ -50,3 +50,5 @@
 
 - belongs_to :room
 - belongs_to :user
+
+
