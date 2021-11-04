@@ -3,59 +3,18 @@
     <%= render "side_bar" %>
     
     <div class="rooms">
-     <div class="room">
-      <div class="room-name">
-       <a href="#">room1</a>
+     <% current_user.rooms.each do |room|%>
+      <div class="room">
+       <div class="room-name">
+        <a href="#"><%= room.name %></a>
+       </div> 
       </div> 
-     </div> 
-     <div class="room">
-      <div class="room-name">
-       <a href="#">room2</a>
-      </div> 
-     </div> 
-     <div class="room">
-      <div class="room-name">
-       <a href="#">room3</a>
-      </div> 
-     </div> 
-     <div class="room">
-      <div class="room-name">
-       <a href="#">room4</a>
-      </div> 
-     </div> 
-     <div class="room">
-      <div class="room-name">
-       <a href="#">room5</a>
-      </div> 
-     </div> <div class="room">
-      <div class="room-name">
-       <a href="#">room6</a>
-      </div> 
-     </div> 
-     <div class="room">
-      <div class="room-name">
-       <a href="#">room7</a>
-      </div> 
-     </div> 
-     <div class="room">
-      <div class="room-name">
-       <a href="#">room8</a>
-      </div> 
-     </div> 
-     <div class="room">
-      <div class="room-name">
-       <a href="#">room9</a>
-      </div> 
-     </div> 
-     <div class="room">
-      <div class="room-name">
-       <a href="#">room10</a>
-      </div> 
-     </div> 
-     
+     <% end %> 
+    </div> 
+    
       
      
-    </div>
+    
   </div>
   <div class="chat">
        <%= render "main_chat" %> 
